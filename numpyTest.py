@@ -58,6 +58,34 @@ def main():
     #1到10生成100个beta分布，random中还有用二项分布等常用分布
     print(np.random.beta(1,10,100))
 
+    #numpy的操作
+
+    #产生等差数列，包括1，不包括11
+    print(np.arange(1,11))
+    print(np.arange(1, 11).reshape([2,5]))
+    print(np.arange(1, 11).reshape([2, -1]))#5可以缺省为-1
+    lst = np.arange(1,11).reshape([2,-1])
+    #自然指数
+    print(np.exp(lst))
+    #2的对应次方
+    print(np.exp2(lst))
+    print("Sqrt:")
+    print(np.sqrt(lst))
+    print(np.sin(lst))
+    print(np.log(lst))#底数是自然底数
+
+    lst = np.array([[[1,2,3,4],
+                     [4,5,6,7]],
+                    [[7,8,9,10],
+                     [10,11,12,13]],
+                    [[14,15,16,17],
+                     [18,19,20,21]]
+                    ])
+
+
+
+
+
 
 
 
